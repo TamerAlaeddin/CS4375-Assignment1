@@ -3,9 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+import ssl
+
+# Disable SSL verification
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # Load the dataset from the hosted URL
-file_url = 'https://raw.githubusercontent.com/TamerAlaeddin/CS4375-Assignment1/main/auto-mpg.data'
+file_url = 'https://raw.githubusercontent.com/TamerAlaeddin/CS4375-Assignment1/main/data/auto-mpg.data'
 column_names = ["mpg", "cylinders", "displacement", "horsepower", "weight", "acceleration", "model year", "origin", "car name"]
 data = pd.read_csv(file_url, names=column_names, sep='\\s+')
 
