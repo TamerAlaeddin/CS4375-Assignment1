@@ -109,3 +109,4 @@ The dataset is hosted on GitHub to ensure that the scripts can fetch the data di
 ## Contributors
 
 - Tamer Alaeddin
+- Joseph Saber
