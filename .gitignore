@@ -1,0 +1,3 @@
+echo "myenv/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "__pycache__/" >> .gitignore
